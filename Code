@@ -1,0 +1,29 @@
+let firstNumber = 3
+let secondNumber = 5
+// first type of solving
+
+for i in 1...100 {
+    if i.isMultiple(of: firstNumber) && i.isMultiple(of: secondNumber) {
+        print ("FizzBuzz")
+    } else if i.isMultiple(of: firstNumber) {
+        print ("Fizz")
+    } else if i.isMultiple(of: secondNumber) {
+        print ("Buzz")
+    } else {
+        print ("No \(i)")
+    }
+}
+
+// second type of solving
+/*
+for i in 1...100 {
+    if i % firstNumber == 0 && i % secondNumber == 0 {
+        print ("FizzBuzz")
+    } else if i % firstNumber == 0 {
+        print ("Fizz")
+    } else if i % secondNumber == 0 {
+        print ("Buzz")
+    } else {
+        print ("No \(i)")
+    }
+}
